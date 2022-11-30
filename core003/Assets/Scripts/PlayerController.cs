@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-        novaPorta = GameObject.Find("novaPorta");
+        novaPorta = GameObject.Find("novaPorta");//novaPorta é nome que está no projeto
     }
 
     void FixedUpdate()

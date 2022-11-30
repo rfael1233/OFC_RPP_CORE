@@ -7,6 +7,7 @@
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovEscada.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovEscada.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -88,7 +89,8 @@
       <workItem from="1669213739920" duration="1016000" />
       <workItem from="1669214911406" duration="1596000" />
       <workItem from="1669411204110" duration="4847000" />
-      <workItem from="1669727290139" duration="2696000" />
+      <workItem from="1669727290139" duration="2956000" />
+      <workItem from="1669815277700" duration="2859000" />
     </task>
     <servers />
   </component>

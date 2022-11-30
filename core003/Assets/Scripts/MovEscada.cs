@@ -6,7 +6,7 @@ using UnityEngine;
 public class MovEscada : MonoBehaviour
 {
     private float vertical; //Sera o input
-    private float speed = 8f; //A velocidade de subir a escada;
+    public float speed = 7f; //A velocidade de subir a escada;
     private bool escada; 
     private bool escalando;
 
