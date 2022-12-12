@@ -11,9 +11,11 @@ public class NaimFollowAsh : MonoBehaviour
     
     
     
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         Target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -23,6 +25,7 @@ public class NaimFollowAsh : MonoBehaviour
         if (Vector2.Distance(transform.position, Target.position) > StoppingDistance)
         {
             transform.position = Vector2.Lerp(transform.position, Target.position, speed * Time.fixedDeltaTime);
+           
         }
        
     }

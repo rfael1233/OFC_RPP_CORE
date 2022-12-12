@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 917bcc7aeeda46b4fa739c94c0319d1b
+  - enabled: 1
     path: Assets/Scenes/FaseTestes.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FaseOne.unity
+    guid: 0e1e66374216cbf4cb9666871d032531
+  - enabled: 1
+    path: Assets/Scenes/FaseTwo.unity
+    guid: a895953d0cbe5ca4594f40277b5a5ca3
+  - enabled: 1
+    path: Assets/Scenes/FaseThree.unity
+    guid: f1c239faeeca8184fb2f4c4d77166d9d
+  - enabled: 1
+    path: Assets/Scenes/FaseTutorial.unity
+    guid: d7dea0a73933fab498782619913bf8d3
   m_configObjects: {}
