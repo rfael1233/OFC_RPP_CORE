@@ -3,9 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    private int vida;
+    private int vidaMaxima = 3;
+
+    [SerializeField] private Image vidaOn;
+    [SerializeField] private Image vidaOff;
+    
+    [SerializeField] private Image vidaOn2;
+    [SerializeField] private Image vidaOff2;
+    
+    
+
+
+
     public float speed; // Responsavel pela velocidade do player
     public Rigidbody2D playerRb; //Corpo do Player
     public float jumpForce; //Sera responsavel pelo força do pulo
@@ -29,6 +44,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
+        vida = vidaMaxima;
         novaPorta = GameObject.Find("novaPorta");//novaPorta é nome que está no projeto
     }
 
@@ -122,6 +138,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.gameObject.CompareTag("espinho"))
+        {
+            Dano();
+        }
         //Quando o player colidir com a tag next, ira executar a função novaPosicao.
         if (col.gameObject.CompareTag("next"))
         {
@@ -136,6 +156,48 @@ public class PlayerController : MonoBehaviour
             playerRb.transform.position = new Vector2(novaPorta.transform.position.x, novaPorta.transform.position.y);
             porta = false;
         }
+    }
+
+    private void Dano()
+    {
+        vida -= 1;           //tirando dano do player
+
+        if (vida == 2)
+        {
+            vidaOn2.enabled = true;
+            vidaOff2.enabled = false;
+        }
+        else
+        {
+            vidaOn2.enabled = false;
+            vidaOff2.enabled = true;
+        }
+
+        if (vida == 1)
+        {
+            //So para garantir que o primeiro coraçao esta apagado mesmo
+            vidaOn2.enabled = true;
+            vidaOff2.enabled = false;
+
+            vidaOn.enabled = true;
+            vidaOff.enabled = false;
+        }
+        else
+        {
+            vidaOn.enabled = false;
+            vidaOff.enabled = true;
+        }
+
+        if (vida <= 0)
+        {
+            SceneManager.LoadScene(6);
+            
+        }
+        
+        
+        
+        
+        
     }
     
 }

@@ -32,4 +32,6 @@ public class MenuPrincipalManager : MonoBehaviour
         Debug.Log("SAIR DO JOGO");
         Application.Quit();
     }
+    
+    
 }
