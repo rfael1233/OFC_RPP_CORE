@@ -134,6 +134,11 @@ public class PlayerController : MonoBehaviour
         {
             isgrounded = true;
         }
+
+        if (col.gameObject.CompareTag("enemy"))
+        {
+            Dano();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
