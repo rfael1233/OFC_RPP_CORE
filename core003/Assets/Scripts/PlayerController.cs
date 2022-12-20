@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public bool isgrounded; // Check
     private bool flipX;
     
+    public Animator animator;
+    
     //Sistrema de dash
 
     private bool canDash = true; //Posso dá o dash?
@@ -46,6 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         vida = vidaMaxima;
         novaPorta = GameObject.Find("novaPorta");//novaPorta é nome que está no projeto
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -61,6 +64,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            //esta correndo
+            animator.SetBool("taCorrendo", true);
+        }
+        else
+        {
+            //esta parado
+            animator.SetBool("taCorrendo", false);
+        }
         novaPosicao();
         movePlayer = Input.GetAxis("Horizontal"); //Usando o input para atribuir o teclado com os comandos da horizontal.
         pulo = Input.GetButtonDown("Jump");//Quando os botoes de Jump.
@@ -75,18 +88,23 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
-        
-        
-        
+
         
         //Condiçao do pulo
         if (pulo == true && isgrounded == true)
         {
             playerRb.AddForce(new Vector2(0, jumpForce));
             isgrounded = false;
+            animator.SetBool("taPulando",true);
+            //ativando a animação
         }
 
-        
+        if (isgrounded)
+        {
+            animator.SetBool("taPulando",false);
+        }
+
+
         if (flipX == false && movePlayer < 0)
         {
             Flip();
@@ -127,9 +145,10 @@ public class PlayerController : MonoBehaviour
     }
     
 
-    //Detectando se o player está na TAG "chao"
+    
     private void OnCollisionEnter2D(Collision2D col)
     {
+        //Detectando se o player está na TAG "chao"
         if (col.gameObject.CompareTag("chao"))
         {
             isgrounded = true;
@@ -143,6 +162,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+       
         if (col.gameObject.CompareTag("espinho"))
         {
             Dano();
@@ -152,8 +172,10 @@ public class PlayerController : MonoBehaviour
         {
             porta = true;
         }
+        
     }
 
+    
     private void novaPosicao()
     {
         if (porta == true)
@@ -165,7 +187,7 @@ public class PlayerController : MonoBehaviour
 
     private void Dano()
     {
-        vida -= 1;           //tirando dano do player
+        vida -= 1;    //tirando dano do player
 
         if (vida == 2)
         {
@@ -195,6 +217,7 @@ public class PlayerController : MonoBehaviour
 
         if (vida <= 0)
         {
+            
             SceneManager.LoadScene(6);
             
         }

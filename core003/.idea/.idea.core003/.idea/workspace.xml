@@ -6,14 +6,56 @@
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Tilemaps-1.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tilemaps-1.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tilemaps-1.png (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tilemaps-1.png (1).png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TesteTilemap.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TesteTilemap.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/NaimFollow/bolinha00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/NaimFollow/bolinha00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/ash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/ash.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/Tilemaps-1.png (1)_8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/teste.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/TilePalleteTeste/teste.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TilePallete/Tilemaps-1.png (1)_8.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +145,7 @@
       <workItem from="1670884558638" duration="1108000" />
       <workItem from="1670938135993" duration="3779000" />
       <workItem from="1671025511826" duration="2382000" />
-      <workItem from="1671542778843" duration="3392000" />
+      <workItem from="1671542778843" duration="8988000" />
     </task>
     <servers />
   </component>
