@@ -34,14 +34,6 @@ public class ControlSom : MonoBehaviour
     {
         fundoMusical.volume = value;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
 }
