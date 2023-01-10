@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/111a03133d14214539c96e0f657dff1a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/111a03133d14214539c96e0f657dff1a.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Introducao.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Introducao.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +108,8 @@
       <workItem from="1671025511826" duration="2382000" />
       <workItem from="1671542778843" duration="9628000" />
       <workItem from="1673288425443" duration="2000" />
+      <workItem from="1673374197580" duration="3191000" />
+      <workItem from="1673378541493" duration="121000" />
     </task>
     <servers />
   </component>

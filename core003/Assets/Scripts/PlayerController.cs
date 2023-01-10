@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
             //esta parado
             animator.SetBool("taCorrendo", false);
         }
-        novaPosicao();
+       
         movePlayer = Input.GetAxis("Horizontal"); //Usando o input para atribuir o teclado com os comandos da horizontal.
         pulo = Input.GetButtonDown("Jump");//Quando os botoes de Jump.
         
@@ -86,7 +86,9 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F) && canDash == true)
         {
+            
             StartCoroutine(Dash());
+            
         }
 
         
@@ -167,23 +169,12 @@ public class PlayerController : MonoBehaviour
         {
             Dano();
         }
-        //Quando o player colidir com a tag next, ira executar a função novaPosicao.
-        if (col.gameObject.CompareTag("next"))
-        {
-            porta = true;
-        }
+        
         
     }
 
     
-    private void novaPosicao()
-    {
-        if (porta == true)
-        {
-            playerRb.transform.position = new Vector2(novaPorta.transform.position.x, novaPorta.transform.position.y);
-            porta = false;
-        }
-    }
+   
 
     private void Dano()
     {
@@ -218,7 +209,7 @@ public class PlayerController : MonoBehaviour
         if (vida <= 0)
         {
             
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
             
         }
         
