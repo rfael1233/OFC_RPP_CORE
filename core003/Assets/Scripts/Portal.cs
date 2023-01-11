@@ -16,6 +16,11 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        playerGO.transform.position = portalSaida.transform.position - new Vector3(0, 0.7f, 0);
+        if (col.CompareTag("Player"))
+        {
+            playerGO.transform.position = portalSaida.transform.position - new Vector3(0, 0.7f, 0);
+        }
+
+    
     }
 }

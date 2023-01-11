@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour
     
     [SerializeField] private Image vidaOn2;
     [SerializeField] private Image vidaOff2;
-    
-    
+
+    [SerializeField] private Image vidaOn3;
+    [SerializeField] private Image vidaOff3;
 
 
+    [SerializeField] private GameObject shieldObject;
+    
 
     public float speed; // Responsavel pela velocidade do player
     public Rigidbody2D playerRb; //Corpo do Player
@@ -37,11 +40,17 @@ public class PlayerController : MonoBehaviour
     public float dashingPower = 200f; //Responsavel pela força do dash
     public float dashingTime = 0.2f; // Responsavel pelo tempo do dash
     public float dashingCoolDown = 0.5f; //Responsavel pelo controle de tempo espera ate pode dá outro dash
-    
+
+    private bool canShield = true;
+    private bool isShielding;
+    public float shieldTime = 2f;
+    public float shieldCooldown = 0.5f;
     
     private float movePlayer;// Sera responsavel pelo INPUT do player
     private bool porta;
     private GameObject novaPorta;
+
+    private bool isDead;
     
     
     void Start()
@@ -80,14 +89,14 @@ public class PlayerController : MonoBehaviour
         
         
         //Só para garantir que tenha retorno do isDashing
-        if (isDashing == true)
-        {
-            return;
-        }
+        
         if (Input.GetKeyDown(KeyCode.F) && canDash == true)
         {
+            if (!isDashing)
+            {
+                StartCoroutine(Dash());
+            }
             
-            StartCoroutine(Dash());
             
         }
 
@@ -115,9 +124,20 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
-        
-        
-         
+
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if (canShield)
+            {
+                StartCoroutine("Shield");
+            }
+        }
+
+        if (Input.anyKeyDown && isDead)
+        {
+            SceneManager.LoadScene(7);
+        }
        
     }
 
@@ -133,6 +153,20 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
+
+
+    }
+    
+    IEnumerator Shield()
+    {
+        canShield = false;
+        isShielding = true;
+        shieldObject.SetActive(true);
+        yield return new WaitForSeconds(shieldTime);
+        isShielding = false;
+        shieldObject.SetActive(false);
+        yield return new WaitForSeconds(shieldCooldown);
+        canShield = true;
 
 
     }
@@ -158,7 +192,20 @@ public class PlayerController : MonoBehaviour
 
         if (col.gameObject.CompareTag("enemy"))
         {
-            Dano();
+            if(!isShielding)
+                Dano();
+            else
+            {
+                if ((!flipX && col.contacts[0].point.x > transform.position.x)||(flipX && col.contacts[0].point.x < transform.position.x))
+                {
+                    // manda o inimigo ir pra tras ou destroi, enfim faz algo pq o player defendeu
+                }
+                else
+                {
+                    // bateu atras
+                    Dano();
+                }
+            }
         }
     }
 
@@ -208,9 +255,20 @@ public class PlayerController : MonoBehaviour
 
         if (vida <= 0)
         {
+            vidaOn3.enabled = true;
+            vidaOff3.enabled = false;
             
-            SceneManager.LoadScene(7);
+            vidaOn2.enabled = true;
+            vidaOff2.enabled = false;
+
+            vidaOn.enabled = true;
+            vidaOff.enabled = false;
+
+            //toca animacao de morte
+            //Time.timeScale = 0f;
             
+            isDead = true;
+
         }
         
         
