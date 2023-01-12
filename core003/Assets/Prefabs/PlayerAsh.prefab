@@ -237,6 +237,8 @@ MonoBehaviour:
   vidaOff: {fileID: 0}
   vidaOn2: {fileID: 0}
   vidaOff2: {fileID: 0}
+  vidaOn3: {fileID: 0}
+  vidaOff3: {fileID: 0}
   shieldObject: {fileID: 1493415608}
   speed: 8
   playerRb: {fileID: 106968236354511870}
