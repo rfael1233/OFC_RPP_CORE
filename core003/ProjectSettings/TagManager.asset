@@ -9,6 +9,7 @@ TagManager:
   - next
   - espinho
   - enemy
+  - core
   layers:
   - Default
   - TransparentFX

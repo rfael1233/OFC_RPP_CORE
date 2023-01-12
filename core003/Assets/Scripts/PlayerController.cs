@@ -51,13 +51,17 @@ public class PlayerController : MonoBehaviour
     private GameObject novaPorta;
 
     private bool isDead;
-    
+
+    private GameController gcPlayer;
     
     void Start()
     {
         vida = vidaMaxima;
         novaPorta = GameObject.Find("novaPorta");//novaPorta é nome que está no projeto
         animator = GetComponent<Animator>();
+        gcPlayer = GameController.gc;
+        gcPlayer.core = 0;
+
     }
 
     void FixedUpdate()
@@ -95,8 +99,11 @@ public class PlayerController : MonoBehaviour
             if (!isDashing)
             {
                 StartCoroutine(Dash());
+                
             }
+            //animator.SetBool("dashAtivo", true);
             
+           
             
         }
 
@@ -216,12 +223,17 @@ public class PlayerController : MonoBehaviour
         {
             Dano();
         }
-        
+        if (col.gameObject.tag == "core")
+        {
+            Destroy(col.gameObject);
+            gcPlayer.core++;
+            gcPlayer.coreText.text = gcPlayer.core.ToString();
+        }
         
     }
 
-    
-   
+  
+
 
     private void Dano()
     {
