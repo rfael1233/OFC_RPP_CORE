@@ -61,7 +61,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         gcPlayer = GameController.gc;
         gcPlayer.core = 0;
-
     }
 
     void FixedUpdate()

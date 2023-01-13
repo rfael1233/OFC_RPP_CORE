@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffdf57599c6a014cb26ecd596689164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vida: 0
   vidaOn: {fileID: 0}
   vidaOff: {fileID: 0}
   vidaOn2: {fileID: 0}
@@ -248,8 +249,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   dashingPower: 100
   dashingTime: 0.15
-  dashingCoolDown: 2.5
-  shieldTime: 2
+  dashingCoolDown: 2
+  shieldTime: 1
   shieldCooldown: 0.5
 --- !u!70 &106968236354511866
 CapsuleCollider2D:
