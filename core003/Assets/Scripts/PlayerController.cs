@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    private int vida;
+    public int vida;
     private int vidaMaxima = 3;
 
     [SerializeField] private Image vidaOn;
@@ -140,7 +140,8 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine("Shield");
             }
         }
-
+        
+        //Quando o player morrer apertar qualquer tecla e ele chama o game over
         if (Input.anyKeyDown && isDead)
         {
             SceneManager.LoadScene(7);
@@ -214,6 +215,30 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
+        if (col.gameObject.CompareTag("Life"))
+        {
+            Destroy(col.gameObject);
+            vida++;
+            if (vida == 3)
+            {
+                vidaOn2.enabled = false;
+                vidaOff2.enabled = true;
+            }
+            
+            if (vida == 2)
+            {
+                vidaOn.enabled = false;
+                vidaOff.enabled = true;
+            }
+
+            if (vida >= 4)
+            {
+                Destroy(col.gameObject);
+                vida--;
+            }
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -232,9 +257,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-  
-
-
+    
     private void Dano()
     {
         vida -= 1;    //tirando dano do player

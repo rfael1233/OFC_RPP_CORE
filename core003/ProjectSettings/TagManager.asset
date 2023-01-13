@@ -10,6 +10,7 @@ TagManager:
   - espinho
   - enemy
   - core
+  - Life
   layers:
   - Default
   - TransparentFX
