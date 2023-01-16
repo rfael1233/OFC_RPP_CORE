@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Botao : MonoBehaviour
-{
+{ 
     public static bool pisou;
     void Start()
     {
@@ -19,7 +19,7 @@ public class Botao : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player" || col.gameObject.tag == "caixa")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "chao")
         {
             pisou = true;
         }
@@ -27,7 +27,7 @@ public class Botao : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player" || col.gameObject.tag == "caixa")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "chao")
         {
             pisou = false;
         }
