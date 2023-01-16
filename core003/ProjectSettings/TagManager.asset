@@ -11,6 +11,8 @@ TagManager:
   - enemy
   - core
   - Life
+  - caixa
+  - Caixa
   layers:
   - Default
   - TransparentFX

@@ -22,7 +22,9 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private GameObject shieldObject;
-    
+
+    public Text coreTxt;
+    private int score;
 
     public float speed; // Responsavel pela velocidade do player
     public Rigidbody2D playerRb; //Corpo do Player
@@ -41,26 +43,25 @@ public class PlayerController : MonoBehaviour
     public float dashingTime = 0.2f; // Responsavel pelo tempo do dash
     public float dashingCoolDown = 0.5f; //Responsavel pelo controle de tempo espera ate pode dá outro dash
 
+    
+    //Sistema de Defesa
     private bool canShield = true;
     private bool isShielding;
     public float shieldTime = 2f;
     public float shieldCooldown = 0.5f;
     
     private float movePlayer;// Sera responsavel pelo INPUT do player
-    private bool porta;
-    private GameObject novaPorta;
-
+    
     private bool isDead;
 
-    private GameController gcPlayer;
+    
     
     void Start()
     {
         vida = vidaMaxima;
-        novaPorta = GameObject.Find("novaPorta");//novaPorta é nome que está no projeto
         animator = GetComponent<Animator>();
-        gcPlayer = GameController.gc;
-        gcPlayer.core = 0;
+        score = 0;
+
     }
 
     void FixedUpdate()
@@ -76,6 +77,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        coreTxt.text = score.ToString();
         if (Input.GetAxis("Horizontal") != 0)
         {
             //esta correndo
@@ -247,12 +249,13 @@ public class PlayerController : MonoBehaviour
         {
             Dano();
         }
-        if (col.gameObject.tag == "core")
+
+        if (col.gameObject.CompareTag("core"))
         {
+            score = score + 1;
             Destroy(col.gameObject);
-            gcPlayer.core++;
-            gcPlayer.coreText.text = gcPlayer.core.ToString();
         }
+        
         
     }
 
