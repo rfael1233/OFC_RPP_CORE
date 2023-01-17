@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Botao : MonoBehaviour
 { 
-    public static bool pisou;
+    public bool pisou;
     void Start()
     {
         

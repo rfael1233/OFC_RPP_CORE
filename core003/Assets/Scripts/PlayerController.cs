@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Image vidaOn;
     [SerializeField] private Image vidaOff;
-    
+
     [SerializeField] private Image vidaOn2;
     [SerializeField] private Image vidaOff2;
 
@@ -29,12 +29,12 @@ public class PlayerController : MonoBehaviour
     public float speed; // Responsavel pela velocidade do player
     public Rigidbody2D playerRb; //Corpo do Player
     public float jumpForce; //Sera responsavel pelo força do pulo
-    public bool pulo; 
+    public bool pulo;
     public bool isgrounded; // Check
     private bool flipX;
-    
+
     public Animator animator;
-    
+
     //Sistrema de dash
 
     private bool canDash = true; //Posso dá o dash?
@@ -43,19 +43,21 @@ public class PlayerController : MonoBehaviour
     public float dashingTime = 0.2f; // Responsavel pelo tempo do dash
     public float dashingCoolDown = 0.5f; //Responsavel pelo controle de tempo espera ate pode dá outro dash
 
-    
+
     //Sistema de Defesa
     private bool canShield = true;
     private bool isShielding;
     public float shieldTime = 2f;
     public float shieldCooldown = 0.5f;
-    
-    private float movePlayer;// Sera responsavel pelo INPUT do player
-    
+
+    private float movePlayer; // Sera responsavel pelo INPUT do player
+
     private bool isDead;
 
-    
-    
+
+    private float lastSpeedY;
+
+    public LayerMask groundLayer;
     void Start()
     {
         vida = vidaMaxima;
@@ -77,6 +79,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        isgrounded = Physics2D.Linecast(transform.position, transform.position + Vector3.down, groundLayer);
+        
         coreTxt.text = score.ToString();
         if (Input.GetAxis("Horizontal") != 0)
         {
@@ -99,10 +103,10 @@ public class PlayerController : MonoBehaviour
         {
             if (!isDashing)
             {
-                StartCoroutine(Dash());
+                StartCoroutine("Dash");
                 
             }
-            //animator.SetBool("dashAtivo", true);
+            
             
            
             
@@ -147,11 +151,16 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(7);
         }
+
+        lastSpeedY = Mathf.Lerp(lastSpeedY, playerRb.velocity.y, Time.deltaTime);
+        animator.SetFloat("SpeedY", lastSpeedY);
+        animator.SetBool("isGrounded", isgrounded);
        
     }
 
     IEnumerator Dash()
     {
+        animator.SetBool("dashAtivo", true);
         canDash = false;
         isDashing = true;
         float originalGravity = playerRb.gravityScale;
@@ -160,8 +169,10 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashingTime);
         playerRb.gravityScale = originalGravity;
         isDashing = false;
+        animator.SetBool("dashAtivo", false);
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
+        
 
 
     }
@@ -188,16 +199,23 @@ public class PlayerController : MonoBehaviour
         x *= -1;
         transform.localScale = new Vector3( x, transform.localScale.y, transform.localScale.z);
     }
-    
 
-    
+
+    private void OnCollisionExit2D(Collision2D col)
+    {
+       /* if (col.gameObject.CompareTag("chao"))
+        {
+            isgrounded = false;
+        }*/
+    }
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         //Detectando se o player está na TAG "chao"
-        if (col.gameObject.CompareTag("chao"))
+        /*if (col.gameObject.CompareTag("chao") && col.GetContact(0).point.y < transform.position.y)
         {
             isgrounded = true;
-        }
+        }*/
 
         if (col.gameObject.CompareTag("enemy"))
         {

@@ -8,7 +8,7 @@ public class Portal : MonoBehaviour
 {
     public GameObject portalSaida;
     private GameObject playerGO;
-    private bool habilitaTeleporte = true;
+    private bool habilitaTeleporte;
     
     
     
@@ -22,6 +22,7 @@ public class Portal : MonoBehaviour
         if (habilitaTeleporte == true && Input.GetKeyDown(KeyCode.S))
         {
             playerGO.transform.position = portalSaida.transform.position;
+            habilitaTeleporte = false;
         }
     }
 

@@ -6,7 +6,8 @@ using UnityEngine;
 public class PortaPuzzle : MonoBehaviour
 {
     public float speed = 3;
-    public Transform[] pos; 
+    public Transform[] pos;
+    public Botao botao;
     void Start()
     {
         
@@ -14,11 +15,11 @@ public class PortaPuzzle : MonoBehaviour
     
     void Update()
     {
-        if (Botao.pisou == true || transform.position.y <= pos[1].position.y)
+        if (botao.pisou == true || transform.position.y <= pos[1].position.y)
         {
             transform.Translate(Vector2.up * Time.deltaTime * speed);
         }
-        if(Botao.pisou == false || transform.position.y >= pos[0].position.y)
+        if(botao.pisou == false || transform.position.y >= pos[0].position.y)
         {
             transform.Translate(Vector2.down * Time.deltaTime * speed);
         }
