@@ -19,7 +19,7 @@ public class Portal : MonoBehaviour
 
     private void Update()
     {
-        if (habilitaTeleporte == true && Input.GetKeyDown(KeyCode.S))
+        if (habilitaTeleporte == true && Input.GetKeyDown(KeyCode.DownArrow))
         {
             playerGO.transform.position = portalSaida.transform.position;
             habilitaTeleporte = false;

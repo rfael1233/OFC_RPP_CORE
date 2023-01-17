@@ -106,10 +106,7 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine("Dash");
                 
             }
-            
-            
            
-            
         }
 
         
@@ -153,9 +150,8 @@ public class PlayerController : MonoBehaviour
         }
 
         lastSpeedY = Mathf.Lerp(lastSpeedY, playerRb.velocity.y, Time.deltaTime);
-        animator.SetFloat("SpeedY", lastSpeedY);
         animator.SetBool("isGrounded", isgrounded);
-       
+        animator.SetFloat("SpeedY", lastSpeedY);
     }
 
     IEnumerator Dash()

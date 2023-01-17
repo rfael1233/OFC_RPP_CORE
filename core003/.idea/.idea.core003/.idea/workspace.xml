@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyPatrol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPatrol.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Botao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Botao.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PortaPuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PortaPuzzle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Portal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Portal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Dash/Dash_Ash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Dash/Dash_Ash.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Jump/Fall0.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Jump/Fall0.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Jump/Fall1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Jump/Fall1.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +115,8 @@
       <workItem from="1673636251242" duration="532000" />
       <workItem from="1673874807081" duration="5912000" />
       <workItem from="1673893805612" duration="3480000" />
-      <workItem from="1673961230327" duration="5004000" />
+      <workItem from="1673961230327" duration="5400000" />
+      <workItem from="1673980601626" duration="1500000" />
     </task>
     <servers />
   </component>
