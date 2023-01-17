@@ -21,7 +21,7 @@ public class Portal : MonoBehaviour
     {
         if (habilitaTeleporte == true && Input.GetKeyDown(KeyCode.S))
         {
-            playerGO.transform.position = portalSaida.transform.position - new Vector3(0, 0, 0);
+            playerGO.transform.position = portalSaida.transform.position;
         }
     }
 
@@ -32,6 +32,7 @@ public class Portal : MonoBehaviour
             habilitaTeleporte = true;
         }
         
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -40,5 +41,6 @@ public class Portal : MonoBehaviour
         {
             habilitaTeleporte = false;
         }
+        
     }
 }
