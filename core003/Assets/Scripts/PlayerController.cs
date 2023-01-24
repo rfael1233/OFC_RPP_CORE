@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
     public float shieldTime = 2f;
     public float shieldCooldown = 0.5f;
 
+    public float yOffset, raySize, jumpAnimMultiplier;
+
     private float movePlayer; // Sera responsavel pelo INPUT do player
 
     private bool isDead;
@@ -77,9 +79,14 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    private void OnDrawGizmos()
+    {
+        Debug.DrawRay(transform.position + Vector3.down * yOffset, Vector3.down * raySize);
+    }
+
     void Update()
     {
-        isgrounded = Physics2D.Linecast(transform.position, transform.position + Vector3.down, groundLayer);
+        isgrounded = Physics2D.Linecast(transform.position + Vector3.down * yOffset, transform.position + Vector3.down * (yOffset+raySize), groundLayer);
         
         coreTxt.text = score.ToString();
         if (Input.GetAxis("Horizontal") != 0)
@@ -113,6 +120,7 @@ public class PlayerController : MonoBehaviour
         //Condiçao do pulo
         if (pulo == true && isgrounded == true)
         {
+            playerRb.velocity = new Vector2(playerRb.velocity.x, 0);
             playerRb.AddForce(new Vector2(0, jumpForce));
             isgrounded = false;
             animator.SetBool("taPulando",true);
@@ -149,7 +157,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(7);
         }
 
-        lastSpeedY = Mathf.Lerp(lastSpeedY, playerRb.velocity.y, Time.deltaTime);
+        lastSpeedY = Mathf.Lerp(lastSpeedY, playerRb.velocity.y, Time.deltaTime * jumpAnimMultiplier);
         animator.SetBool("isGrounded", isgrounded);
         animator.SetFloat("SpeedY", lastSpeedY);
     }

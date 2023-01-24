@@ -241,6 +241,7 @@ MonoBehaviour:
   vidaOn3: {fileID: 0}
   vidaOff3: {fileID: 0}
   shieldObject: {fileID: 1493415608}
+  coreTxt: {fileID: 0}
   speed: 8
   playerRb: {fileID: 106968236354511870}
   jumpForce: 575
@@ -252,6 +253,12 @@ MonoBehaviour:
   dashingCoolDown: 2
   shieldTime: 1
   shieldCooldown: 0.5
+  yOffset: 0.8
+  raySize: 0.24
+  jumpAnimMultiplier: 10
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!70 &106968236354511866
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
