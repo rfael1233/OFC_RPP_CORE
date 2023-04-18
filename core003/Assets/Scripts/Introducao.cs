@@ -12,18 +12,11 @@ public class Introducao : MonoBehaviour
     {
         StartCoroutine(Rotina());
     }
-
-    
-
-    // ReSharper disable Unity.PerformanceAnalysis
     public IEnumerator Rotina()
     {
         GameObject img = GameObject.Find("img" + _cont);
         img.GetComponent<RawImage>().enabled = true;
         _cont++;
-
-        
-
         if (_cont < 4)
         {
             yield return new WaitForSeconds(_timeRotina);

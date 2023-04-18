@@ -5,13 +5,6 @@ using UnityEngine;
 
 public class EnemyFollow : EnemyController
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     protected override void Update()
     {
         base.Update();
@@ -20,7 +13,6 @@ public class EnemyFollow : EnemyController
         
         
     }
-
     void FixedUpdate()
     {
         if (isMoving)

@@ -6,17 +6,6 @@ using UnityEngine;
 public class Botao : MonoBehaviour
 { 
     public bool pisou;
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "chao")
@@ -24,7 +13,6 @@ public class Botao : MonoBehaviour
             pisou = true;
         }
     }
-
     private void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "chao")

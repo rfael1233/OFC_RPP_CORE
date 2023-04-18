@@ -176,9 +176,6 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("dashAtivo", false);
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
-        
-
-
     }
     
     IEnumerator Shield()

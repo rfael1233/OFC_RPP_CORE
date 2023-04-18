@@ -7,12 +7,6 @@ public class NaimFollowAsh : MonoBehaviour
     public float speed;
     public float StoppingDistance;
     private Transform Target; //seguir o player
-    
-    
-    
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
         
