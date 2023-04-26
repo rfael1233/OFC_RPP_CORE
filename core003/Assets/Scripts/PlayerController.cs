@@ -50,11 +50,13 @@ public class PlayerController : MonoBehaviour
     public float shieldTime = 2f;
     public float shieldCooldown = 0.5f;
 
-    public float yOffset, raySize, jumpAnimMultiplier;
+    public float yOffset, raySize, jumpAnimMultiplier, xOffset, checkGroundX;
 
     private float movePlayer; // Sera responsavel pelo INPUT do player
 
     private bool isDead;
+
+    private bool isInKnockDown;
 
 
     private float lastSpeedY;
@@ -65,6 +67,9 @@ public class PlayerController : MonoBehaviour
         vida = vidaMaxima;
         animator = GetComponent<Animator>();
         score = 0;
+        
+        if(GameManager.Instance.GetCheckpointAtual() != Vector3.zero)
+            transform.position = GameManager.Instance.GetCheckpointAtual();
 
     }
 
@@ -74,7 +79,10 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        playerRb.velocity = new Vector2(movePlayer * speed, playerRb.velocity.y); //Movimentando o player, para um lado e para o outro... tanto para a esquerda, quanto para a direita.
+        
+        
+        if(!isInKnockDown)
+            playerRb.velocity = new Vector2(movePlayer * speed, playerRb.velocity.y); //Movimentando o player, para um lado e para o outro... tanto para a esquerda, quanto para a direita.
         
         
     }
@@ -82,11 +90,20 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Debug.DrawRay(transform.position + Vector3.down * yOffset, Vector3.down * raySize);
+        Debug.DrawRay(transform.position + Vector3.down * yOffset + Vector3.right * xOffset, Vector3.down * raySize);
+        Debug.DrawRay(transform.position + Vector3.down * yOffset - Vector3.right * xOffset, Vector3.down * raySize);
     }
 
     void Update()
     {
-        isgrounded = Physics2D.Linecast(transform.position + Vector3.down * yOffset, transform.position + Vector3.down * (yOffset+raySize), groundLayer);
+        isgrounded = (Physics2D.Linecast(transform.position + Vector3.down * yOffset,
+                          transform.position + Vector3.down * (yOffset + raySize), groundLayer) ||
+                      Physics2D.Linecast(transform.position + Vector3.down * yOffset + Vector3.right * xOffset,
+                          transform.position + Vector3.down * (yOffset + raySize) + Vector3.right * xOffset,
+                          groundLayer) ||
+                      Physics2D.Linecast(transform.position + Vector3.down * yOffset - Vector3.right * xOffset,
+                          transform.position + Vector3.down * (yOffset + raySize) - Vector3.right * xOffset,
+                          groundLayer));
         
         coreTxt.text = score.ToString();
         if (Input.GetAxis("Horizontal") != 0)
@@ -152,7 +169,7 @@ public class PlayerController : MonoBehaviour
         }
         
         //Quando o player morrer apertar qualquer tecla e ele chama o game over
-        if (Input.anyKeyDown && isDead)
+        if (isDead)
         {
             SceneManager.LoadScene(7);
         }
@@ -221,7 +238,13 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("enemy"))
         {
             if(!isShielding)
-                Dano();
+            { 
+                if (col.transform.position.x > transform.position.x)
+                    Dano(false);
+                else
+                    Dano(true);
+                
+            }
             else
             {
                 if ((!flipX && col.contacts[0].point.x > transform.position.x)||(flipX && col.contacts[0].point.x < transform.position.x))
@@ -230,8 +253,10 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    // bateu atras
-                    Dano();
+                    if (col.transform.position.x > transform.position.x)
+                        Dano(false);
+                    else
+                        Dano(true);
                 }
             }
         }
@@ -266,7 +291,10 @@ public class PlayerController : MonoBehaviour
        
         if (col.gameObject.CompareTag("espinho"))
         {
-            Dano();
+            if (col.transform.position.x > transform.position.x)
+                Dano(false);
+            else
+                Dano(true);
         }
 
         if (col.gameObject.CompareTag("core"))
@@ -275,14 +303,19 @@ public class PlayerController : MonoBehaviour
             Destroy(col.gameObject);
         }
         
-        
+        if (col.gameObject.CompareTag("Checkpoint"))
+        {
+            GameManager.Instance.AtualizaCheckpoint(col.transform.position);
+        }
     }
 
     
-    private void Dano()
+    private void Dano(bool left)
     {
         vida -= 1;    //tirando dano do player
 
+        StartCoroutine(DoKnockDown(left));
+        
         if (vida == 2)
         {
             vidaOn2.enabled = true;
@@ -322,8 +355,8 @@ public class PlayerController : MonoBehaviour
 
             //toca animacao de morte
             //Time.timeScale = 0f;
-            
-            isDead = true;
+
+            StartCoroutine(CallGameOver());
 
         }
         
@@ -331,6 +364,30 @@ public class PlayerController : MonoBehaviour
         
         
         
+    }
+
+    private IEnumerator DoKnockDown(bool left)
+    {
+        isInKnockDown = true;
+        if (left)
+        {
+            playerRb.AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
+        }
+        else
+        {
+            playerRb.AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
+        }
+        yield return new WaitForSeconds(0.5f);
+        isInKnockDown = false;
+    }
+
+    private IEnumerator CallGameOver()
+    {
+        GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
+        playerRb.isKinematic = true;
+        //toca animacao
+        yield return new WaitForSeconds(1f);
+        isDead = true;
     }
     
 }

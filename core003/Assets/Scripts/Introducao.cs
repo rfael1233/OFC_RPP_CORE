@@ -25,7 +25,7 @@ public class Introducao : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(_timeRotina);
-            SceneManager.LoadScene("FaseTestes");
+            SceneManager.LoadScene("FaseOne");
         }
     }
 }

@@ -32,6 +32,9 @@ public class MenuPrincipalManager : MonoBehaviour
         Debug.Log("SAIR DO JOGO");
         Application.Quit();
     }
-    
-    
+
+    public void Continuar()
+    {
+        GameManager.Instance.CarregaUltimaFase();
+    }
 }

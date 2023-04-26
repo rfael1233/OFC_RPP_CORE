@@ -13,6 +13,7 @@ TagManager:
   - Life
   - caixa
   - Caixa
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

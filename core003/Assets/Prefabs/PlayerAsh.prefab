@@ -256,6 +256,8 @@ MonoBehaviour:
   yOffset: 0.8
   raySize: 0.24
   jumpAnimMultiplier: 10
+  xOffset: 0.17
+  checkGroundX: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -272,8 +274,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.28194827, y: -0.39785424}
-  m_Size: {x: 1.4271982, y: 5.036524}
+  m_Offset: {x: -0.17983268, y: -0.39785424}
+  m_Size: {x: 2.130725, y: 5.036524}
   m_Direction: 0
 --- !u!95 &106968236354511867
 Animator:
