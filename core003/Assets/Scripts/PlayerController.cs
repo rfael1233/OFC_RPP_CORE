@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     public float dashingPower = 200f; //Responsavel pela força do dash
     public float dashingTime = 0.2f; // Responsavel pelo tempo do dash
     public float dashingCoolDown = 0.5f; //Responsavel pelo controle de tempo espera ate pode dá outro dash
+    public GameObject dashObjTime; // será o objeto do tempo que aparece na tela de hub
 
 
     //Sistema de Defesa
@@ -125,9 +126,12 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.F) && canDash == true)
         {
+            
             if (!isDashing)
             {
                 StartCoroutine("Dash");
+                dashObjTime.SetActive(true);
+                Invoke("HideDashObject", dashingCoolDown);
                 
             }
            
@@ -193,6 +197,11 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("dashAtivo", false);
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
+    }
+
+    void HideDashObject()
+    {
+        dashObjTime.SetActive(false);
     }
     
     IEnumerator Shield()

@@ -8,6 +8,7 @@ public class EnemyMov : MonoBehaviour
    public Transform groundCheck;
    public LayerMask groundLayer;
    public bool facingRight = true;
+   
    void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
