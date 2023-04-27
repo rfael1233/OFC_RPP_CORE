@@ -171,13 +171,12 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine("Shield");
             }
         }
-        
-        //Quando o player morrer apertar qualquer tecla e ele chama o game over
         if (isDead)
         {
             SceneManager.LoadScene(7);
         }
 
+        
         lastSpeedY = Mathf.Lerp(lastSpeedY, playerRb.velocity.y, Time.deltaTime * jumpAnimMultiplier);
         animator.SetBool("isGrounded", isgrounded);
         animator.SetFloat("SpeedY", lastSpeedY);
@@ -198,7 +197,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
     }
-
+    //ativar ativa
     void HideDashObject()
     {
         dashObjTime.SetActive(false);
@@ -361,7 +360,7 @@ public class PlayerController : MonoBehaviour
 
             vidaOn.enabled = true;
             vidaOff.enabled = false;
-
+            
             //toca animacao de morte
             //Time.timeScale = 0f;
 
@@ -395,7 +394,8 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
         playerRb.isKinematic = true;
         //toca animacao
-        yield return new WaitForSeconds(1f);
+        animator.SetBool("MorteAsh",true); //Aqui chama a animação de morte
+        yield return new WaitForSeconds(3f);
         isDead = true;
     }
     
