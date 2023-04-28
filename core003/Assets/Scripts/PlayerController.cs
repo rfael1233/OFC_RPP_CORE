@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
     private bool isShielding;
     public float shieldTime = 2f;
     public float shieldCooldown = 0.5f;
+    public GameObject shieldObjTime;
 
     public float yOffset, raySize, jumpAnimMultiplier, xOffset, checkGroundX;
 
@@ -132,12 +133,9 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine("Dash");
                 dashObjTime.SetActive(true);
                 Invoke("HideDashObject", dashingCoolDown);
-                
             }
            
         }
-
-        
         //Condiçao do pulo
         if (pulo == true && isgrounded == true)
         {
@@ -169,6 +167,8 @@ public class PlayerController : MonoBehaviour
             if (canShield)
             {
                 StartCoroutine("Shield");
+                
+                
             }
         }
         if (isDead)
@@ -202,6 +202,11 @@ public class PlayerController : MonoBehaviour
     {
         dashObjTime.SetActive(false);
     }
+    void HideShieldObject()
+    {
+        shieldObjTime.SetActive(false);
+    }
+    
     
     IEnumerator Shield()
     {
@@ -211,6 +216,8 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(shieldTime);
         isShielding = false;
         shieldObject.SetActive(false);
+        shieldObjTime.SetActive(true);
+        Invoke("HideShieldObject", shieldCooldown);
         yield return new WaitForSeconds(shieldCooldown);
         canShield = true;
 
@@ -394,7 +401,8 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
         playerRb.isKinematic = true;
         //toca animacao
-        animator.SetBool("MorteAsh",true); //Aqui chama a animação de morte
+        animator.SetBool("MorteAsh",true);
+        //Aqui chama a animação de morte
         yield return new WaitForSeconds(3f);
         isDead = true;
     }

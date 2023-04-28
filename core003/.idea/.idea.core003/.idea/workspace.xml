@@ -6,17 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/Materials/planta 2-1.png.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/Materials/planta 2-1.png.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerAsh.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerAsh.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Animações/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +125,7 @@
       <workItem from="1682524547332" duration="6129000" />
       <workItem from="1682601207122" duration="4782000" />
       <workItem from="1682612763647" duration="3864000" />
+      <workItem from="1682687300638" duration="2920000" />
     </task>
     <servers />
   </component>
@@ -148,5 +148,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
+          <line>182</line>
+          <properties documentPath="C:\Users\20191170150056\Documents\GIT\OFC_RPP_CORE\core003\Assets\Scripts\PlayerController.cs" initialLine="183" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="5623" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5624" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
