@@ -254,6 +254,7 @@ MonoBehaviour:
   dashObjTime: {fileID: 0}
   shieldTime: 1
   shieldCooldown: 0.5
+  shieldObjTime: {fileID: 0}
   yOffset: 0.8
   raySize: 0.24
   jumpAnimMultiplier: 10
