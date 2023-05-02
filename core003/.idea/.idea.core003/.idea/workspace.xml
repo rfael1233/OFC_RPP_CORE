@@ -6,105 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra escudo identificação/l0_sprite_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra escudo identificação/l0_sprite_01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/animBase2Enemy1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/animBase2Enemy1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/animBaseEnemy1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/animBaseEnemy1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/animEnemy1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/animEnemy1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l0_inimigo parado4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l1_inimigo parado4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1/l2_inimigo parado4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/animEnemy2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/animEnemy2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado1_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado1_0.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2/l0_inimigo que segue parado4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/animEnemy3.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/animEnemy3.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador1_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador1_0.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3/l0_inimigo voador5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/animEnemy4.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/animEnemy4.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro01_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro01_0.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro04.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro05.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro06.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro07.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro08.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro09.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4/l0_inimigo que segue giro10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerAsh.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerAsh.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTestes.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,6 +120,7 @@
       <workItem from="1682612763647" duration="3864000" />
       <workItem from="1682687300638" duration="3071000" />
       <workItem from="1682705513591" duration="5000" />
+      <workItem from="1683032870473" duration="4204000" />
     </task>
     <servers />
   </component>
@@ -239,24 +143,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>182</line>
-          <properties documentPath="C:\Users\20191170150056\Documents\GIT\OFC_RPP_CORE\core003\Assets\Scripts\PlayerController.cs" initialLine="183" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="5623" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5624" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

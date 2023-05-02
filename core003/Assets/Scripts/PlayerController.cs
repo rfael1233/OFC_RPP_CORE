@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class PlayerController : MonoBehaviour
 {
@@ -60,6 +62,9 @@ public class PlayerController : MonoBehaviour
 
     private bool isInKnockDown;
 
+    private SpriteRenderer playerSpriteRenderer; //Sprit fica piscando
+    private float damageTime = 1f;
+
 
     private float lastSpeedY;
 
@@ -69,6 +74,7 @@ public class PlayerController : MonoBehaviour
         vida = vidaMaxima;
         animator = GetComponent<Animator>();
         score = 0;
+        playerSpriteRenderer = GetComponent<SpriteRenderer>();
         
         if(GameManager.Instance.GetCheckpointAtual() != Vector3.zero)
             transform.position = GameManager.Instance.GetCheckpointAtual();
@@ -181,7 +187,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isGrounded", isgrounded);
         animator.SetFloat("SpeedY", lastSpeedY);
     }
-
+    
     IEnumerator Dash()
     {
         animator.SetBool("dashAtivo", true);
@@ -303,6 +309,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.gameObject.CompareTag("MorteInst"))
+        {
+            Dano(true);
+            playerRb.transform.position = GameManager.Instance.GetCheckpointAtual();
+
+        }
        
         if (col.gameObject.CompareTag("espinho"))
         {
@@ -321,6 +333,7 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("Checkpoint"))
         {
             GameManager.Instance.AtualizaCheckpoint(col.transform.position);
+            Destroy(col.gameObject);
         }
     }
 
@@ -384,6 +397,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator DoKnockDown(bool left)
     {
         isInKnockDown = true;
+       
         if (left)
         {
             playerRb.AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
@@ -392,7 +406,18 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
         }
+        for (float i = 0; i < damageTime; i += 0.2f)
+        {
+            Physics2D.IgnoreLayerCollision(3,6);
+            playerSpriteRenderer.enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            playerSpriteRenderer.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            Physics2D.IgnoreLayerCollision(3,6, false);
+        }
+
         yield return new WaitForSeconds(0.5f);
+        
         isInKnockDown = false;
     }
 
