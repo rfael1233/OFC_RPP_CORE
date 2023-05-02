@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 111309602602205249}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 111309602846736101}
   - component: {fileID: 111309602846736100}
   - component: {fileID: 111309602846736123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnemyF2_2
   m_TagString: enemy
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8457057166582642279}
   - component: {fileID: 8457057166582642278}
   - component: {fileID: 8457057166582642277}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l1_inimigo parado1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 8457057167044595426}
   - component: {fileID: 8457057167044595425}
   - component: {fileID: 8457057167044595424}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: l2_inimigo parado1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 8457057167218823760}
   - component: {fileID: 8457057167218823775}
   - component: {fileID: 8457057167218823761}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy1
   m_TagString: enemy
   m_Icon: {fileID: 0}

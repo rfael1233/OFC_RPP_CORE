@@ -48,11 +48,11 @@ public class PlayerController : MonoBehaviour
 
 
     //Sistema de Defesa
-    private bool canShield = true;
-    private bool isShielding;
-    public float shieldTime = 2f;
-    public float shieldCooldown = 0.5f;
-    public GameObject shieldObjTime;
+    private bool canShield = true;//Posso usar o escudo?
+    private bool isShielding; // escudo ativo.
+    public float shieldTime = 2f;// Responsavel pelo tempo do escudo
+    public float shieldCooldown = 0.5f;//Responsavel pelo controle do tempo de espera ate pode usar o escudo dnv
+    public GameObject shieldObjTime;// será o objeto do tempo que aparece na tela de hub
 
     public float yOffset, raySize, jumpAnimMultiplier, xOffset, checkGroundX;
 
@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
     private bool isInKnockDown;
 
     private SpriteRenderer playerSpriteRenderer; //Sprit fica piscando
+    
     private float damageTime = 1f;
 
 
@@ -203,7 +204,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashingCoolDown);
         canDash = true;
     }
-    //ativar ativa
+    
     void HideDashObject()
     {
         dashObjTime.SetActive(false);
@@ -416,7 +417,7 @@ public class PlayerController : MonoBehaviour
             Physics2D.IgnoreLayerCollision(3,6, false);
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         
         isInKnockDown = false;
     }
@@ -425,10 +426,8 @@ public class PlayerController : MonoBehaviour
     {
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
         playerRb.isKinematic = true;
-        //toca animacao
         animator.SetBool("MorteAsh",true);
-        //Aqui chama a animação de morte
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         isDead = true;
     }
     
