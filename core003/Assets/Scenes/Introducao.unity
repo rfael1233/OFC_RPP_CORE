@@ -777,7 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b256b879c6a2b34fa1e8d109de55c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeRotina: 3.8
+  nomeProximaScene: FaseOne
+  _timeRotina: 2
 --- !u!4 &1880638754
 Transform:
   m_ObjectHideFlags: 0

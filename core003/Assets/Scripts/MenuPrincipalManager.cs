@@ -37,4 +37,9 @@ public class MenuPrincipalManager : MonoBehaviour
     {
         GameManager.Instance.CarregaUltimaFase();
     }
+
+    public void VoltarMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

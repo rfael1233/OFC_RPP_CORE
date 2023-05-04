@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
+using Scene = UnityEditor.SearchService.Scene;
 
 public class PlayerController : MonoBehaviour
 {
@@ -316,7 +317,7 @@ public class PlayerController : MonoBehaviour
             playerRb.transform.position = GameManager.Instance.GetCheckpointAtual();
 
         }
-       
+       /*
         if (col.gameObject.CompareTag("espinho"))
         {
             if (col.transform.position.x > transform.position.x)
@@ -324,7 +325,8 @@ public class PlayerController : MonoBehaviour
             else
                 Dano(true);
         }
-
+        */
+       
         if (col.gameObject.CompareTag("core"))
         {
             score = score + 1;
@@ -394,7 +396,7 @@ public class PlayerController : MonoBehaviour
         
         
     }
-
+    
     private IEnumerator DoKnockDown(bool left)
     {
         isInKnockDown = true;
@@ -425,7 +427,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator CallGameOver()
     {
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
-        playerRb.isKinematic = true;
+        //playerRb.isKinematic = true;
         animator.SetBool("MorteAsh",true);
         yield return new WaitForSeconds(1.5f);
         isDead = true;
