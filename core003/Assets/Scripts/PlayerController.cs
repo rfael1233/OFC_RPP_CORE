@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
     public float dashingCoolDown = 0.5f; //Responsavel pelo controle de tempo espera ate pode dá outro dash
     public GameObject dashObjTime; // será o objeto do tempo que aparece na tela de hub
 
+    [SerializeField] private TrailRenderer tr;
+
 
     //Sistema de Defesa
     private bool canShield = true;//Posso usar o escudo?
@@ -133,7 +135,7 @@ public class PlayerController : MonoBehaviour
         
         //Só para garantir que tenha retorno do isDashing
         
-        if (Input.GetKeyDown(KeyCode.F) && canDash == true)
+        if (Input.GetKeyDown(KeyCode.K) && canDash == true)
         {
             
             if (!isDashing)
@@ -170,7 +172,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             if (canShield)
             {
@@ -198,7 +200,9 @@ public class PlayerController : MonoBehaviour
         float originalGravity = playerRb.gravityScale;
         playerRb.gravityScale = 0f;
         playerRb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
         playerRb.gravityScale = originalGravity;
         isDashing = false;
         animator.SetBool("dashAtivo", false);

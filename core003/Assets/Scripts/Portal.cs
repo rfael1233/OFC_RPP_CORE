@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
 public class Portal : MonoBehaviour
 {
     public GameObject portalSaida;
@@ -20,6 +19,11 @@ public class Portal : MonoBehaviour
     private void Update()
     {
         if (habilitaTeleporte == true && Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            playerGO.transform.position = portalSaida.transform.position;
+            habilitaTeleporte = false;
+        }
+        if(habilitaTeleporte && Input.GetKeyDown(KeyCode.S))
         {
             playerGO.transform.position = portalSaida.transform.position;
             habilitaTeleporte = false;

@@ -5,6 +5,137 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra som-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra som-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra som-2.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra som-2.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra vida-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/barra vida-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão continue-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão continue-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão jogar-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão jogar-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão opções-1.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão opções-1.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão opções-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão opções-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão sair-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/botão sair-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/core bolinha-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/core bolinha-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/core cristal-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/core cristal-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/logo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/menu-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/menu-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/mute-1.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/mute-1.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/pause-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/pause-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/quadrado-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/quadrado-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/sair-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/sair-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/som-1.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/som-1.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/voltar-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/voltar-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/volume1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/Button´s/volume1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tilemaps 3-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tilemaps 3-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tilemaps 4-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tilemaps 4-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tilemaps fase2-1.png (3).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tilemaps fase2-1.png (3).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l0_inimigo parado4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l1_inimigo parado4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F1/l2_inimigo parado4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy1F2/l0_spyke vermelho4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F1/l0_inimigo que segue parado4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy2F2/l0_giro vermelho11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F1/l0_inimigo voador5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy3F2/l0_inimigo voador vermelho5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy´s/Enemy4F1/l0_inimigo que segue giro10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/Caixas -1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/Caixas -1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/arvore.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/arvore.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/bakcgraund fase 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/bakcgraund fase 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/botão-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/botão-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/entrada 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/entrada 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/entrada2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/entrada2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/fim de jogo-1.png (2).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/fim de jogo-1.png (2).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/gumelo-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/gumelo-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/moita-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/moita-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/paralax 2-1.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/paralax 2-1.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/paralax 3-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/paralax 3-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/paralax-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/paralax-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/parede 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/parede 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/parede 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/parede 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedaço core 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedaço core 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedestal core-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedestal core-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedestal-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedestal-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 3-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 3-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 4-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 4-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 5-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pedra solo 5-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/pilar-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/pilar-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/planta 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/planta 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/planta 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/planta 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/planta 3-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/planta 3-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/planta 4-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/planta 4-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/ruína 1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/ruína 1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/ruína 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/ruína 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/ruína 3-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/ruína 3-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase1/tijolos-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase1/tijolos-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/arvore 3-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/arvore 3-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/arvore seca 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/arvore seca 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/arvore seca1-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/arvore seca1-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/bakcgraund fase 2-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/bakcgraund fase 2-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/bakcgraund fase 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/bakcgraund fase 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/gumelo-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/gumelo-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/moita fase2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/moita fase2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/pedra fase 2-1.png (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/pedra fase 2-1.png (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/pedra fase 2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/pedra fase 2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/planta fase2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/planta fase2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/ruína 1.2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/ruína 1.2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItensFase2/ruína 2.2-1.png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ItensFase2/ruína 2.2-1.png.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy3F2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy3F2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NaimFollow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NaimFollow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Introducao.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Introducao.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Introducao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Introducao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Portal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Portal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +252,7 @@
       <workItem from="1683032870473" duration="6402000" />
       <workItem from="1683119517483" duration="64000" />
       <workItem from="1683205672912" duration="4937000" />
+      <workItem from="1683301779429" duration="3162000" />
     </task>
     <servers />
   </component>

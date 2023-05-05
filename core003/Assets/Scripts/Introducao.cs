@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Introducao : MonoBehaviour
 {
     [SerializeField] private string nomeProximaScene;
+    [SerializeField] private string nextFase;
     public float _timeRotina;
     private int _cont = 0;
     void Start()
@@ -28,5 +29,11 @@ public class Introducao : MonoBehaviour
             yield return new WaitForSeconds(_timeRotina);
             SceneManager.LoadScene(nomeProximaScene);
         }
+        
+    }
+
+    public void NextFase()
+    {
+        SceneManager.LoadScene(nextFase);
     }
 }
