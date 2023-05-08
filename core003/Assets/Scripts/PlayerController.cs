@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
         
         //Só para garantir que tenha retorno do isDashing
         
-        if (Input.GetKeyDown(KeyCode.K) && canDash == true)
+        if (Input.GetKeyDown(KeyCode.X) && canDash == true)
         {
             
             if (!isDashing)
@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (canShield)
             {
