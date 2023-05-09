@@ -8,43 +8,24 @@ using UnityEngine.UI;
 public class Interaçao : MonoBehaviour
 {
     
-    //public float distanciaMaxima = 5f;
-    public Image imagemRefencia;
-
-    //private GameObject player;
-    
+    public Image imagemReferencia;
     void Start()
     {
-        //player = GameObject.FindWithTag("Player");
-        imagemRefencia.enabled = false;
+        imagemReferencia.enabled = false;
         
     }
-    void Update()
-    {
-        /*
-        if (Vector3.Distance(transform.position, player.transform.position) <= distanciaMaxima)
-        {
-            imagemRefencia.enabled = true;
-        }
-        else
-        {
-            imagemRefencia.enabled = false;
-        }*/
-    }
-
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            imagemRefencia.enabled = true;
+            imagemReferencia.enabled = true;
         }
     }
-
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            imagemRefencia.enabled = false;
+            imagemReferencia.enabled = false;
         }
     }
 }
