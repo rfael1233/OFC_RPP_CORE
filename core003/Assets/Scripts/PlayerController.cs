@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
-using Scene = UnityEditor.SearchService.Scene;
+//using Scene = UnityEditor.SearchService.Scene;
 
 public class PlayerController : MonoBehaviour
 {
