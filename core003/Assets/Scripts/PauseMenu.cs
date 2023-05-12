@@ -21,6 +21,8 @@ public class PauseMenu : MonoBehaviour
     public void Home(int sceneID)
     {
         Time.timeScale = 1f;
+        Vector3 posicaoInicial = new Vector3(-168.88f, -44f, 0f);
+        GameManager.Instance.AtualizaCheckpoint(posicaoInicial);
         SceneManager.LoadScene(sceneID);
     }
 }

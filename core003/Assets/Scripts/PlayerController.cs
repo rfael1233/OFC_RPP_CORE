@@ -61,11 +61,11 @@ public class PlayerController : MonoBehaviour
 
     private float movePlayer; // Sera responsavel pelo INPUT do player
 
-    private bool isDead;
+    private bool isDead = false;
 
     private bool isInKnockDown;
 
-    private SpriteRenderer playerSpriteRenderer; //Sprit fica piscando
+    private SpriteRenderer playerSpriteRenderer; //Sprite fica piscando
     
     private float damageTime = 1f;
 
@@ -82,7 +82,6 @@ public class PlayerController : MonoBehaviour
         
         if(GameManager.Instance.GetCheckpointAtual() != Vector3.zero)
             transform.position = GameManager.Instance.GetCheckpointAtual();
-
     }
 
     void FixedUpdate()
@@ -183,7 +182,9 @@ public class PlayerController : MonoBehaviour
         }
         if (isDead)
         {
+            isDead = false;
             SceneManager.LoadScene(7);
+            
         }
 
         
@@ -342,6 +343,7 @@ public class PlayerController : MonoBehaviour
             GameManager.Instance.AtualizaCheckpoint(col.transform.position);
             Destroy(col.gameObject);
         }
+        
     }
 
     
@@ -407,11 +409,11 @@ public class PlayerController : MonoBehaviour
        
         if (left)
         {
-            playerRb.AddForce(Vector2.right * 10f, ForceMode2D.Impulse);
+            playerRb.AddForce(Vector2.right * 5f, ForceMode2D.Impulse);
         }
         else
         {
-            playerRb.AddForce(Vector2.left * 10f, ForceMode2D.Impulse);
+            playerRb.AddForce(Vector2.left * 5f, ForceMode2D.Impulse);
         }
         for (float i = 0; i < damageTime; i += 0.2f)
         {
@@ -433,7 +435,7 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
         //playerRb.isKinematic = true;
         animator.SetBool("MorteAsh",true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         isDead = true;
     }
     

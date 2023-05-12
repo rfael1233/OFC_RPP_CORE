@@ -251,7 +251,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   dashingPower: 100
   dashingTime: 0.15
-  dashingCoolDown: 2
+  dashingCoolDown: 1.5
   dashObjTime: {fileID: 0}
   tr: {fileID: 1099207665}
   shieldTime: 2

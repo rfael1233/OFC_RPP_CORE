@@ -8,8 +8,10 @@ public class Introducao : MonoBehaviour
 {
     [SerializeField] private string nomeProximaScene;
     [SerializeField] private string nextFase;
+    [SerializeField] private int numImg = 9;
     public float _timeRotina;
     private int _cont = 0;
+    
     void Start()
     {
         StartCoroutine(Rotina());
@@ -19,7 +21,8 @@ public class Introducao : MonoBehaviour
         GameObject img = GameObject.Find("img" + _cont);
         img.GetComponent<RawImage>().enabled = true;
         _cont++;
-        if (_cont < 4)
+        
+        if (_cont < numImg)
         {
             yield return new WaitForSeconds(_timeRotina);
             StartCoroutine(Rotina());
