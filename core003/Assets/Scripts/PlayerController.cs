@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
     private float movePlayer; // Sera responsavel pelo INPUT do player
 
-    private bool isDead = false;
+    private bool isDead = false; //Está Morto?
 
     private bool isInKnockDown;
 
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
 
     private float lastSpeedY;
-
+    
     public LayerMask groundLayer;
     void Start()
     {
@@ -79,9 +79,10 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         score = 0;
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
-        Physics2D.IgnoreLayerCollision(3,6, false);
+        Physics2D.IgnoreLayerCollision(6,3, false);
         if(GameManager.Instance.GetCheckpointAtual() != Vector3.zero)
             transform.position = GameManager.Instance.GetCheckpointAtual();
+        
     }
 
     void FixedUpdate()
@@ -94,8 +95,8 @@ public class PlayerController : MonoBehaviour
         
         if(!isInKnockDown)
             playerRb.velocity = new Vector2(movePlayer * speed, playerRb.velocity.y); //Movimentando o player, para um lado e para o outro... tanto para a esquerda, quanto para a direita.
-        
-        
+
+       
     }
 
     private void OnDrawGizmos()
@@ -152,7 +153,6 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(new Vector2(0, jumpForce));
             isgrounded = false;
             animator.SetBool("taPulando",true);
-            //ativando a animação
         }
 
         if (isgrounded)
@@ -380,8 +380,10 @@ public class PlayerController : MonoBehaviour
 
             vidaOn.enabled = true;
             vidaOff.enabled = false;
-            
 
+            canDash = false;
+            canShield = false;
+            Physics2D.IgnoreLayerCollision(6,3);
             StartCoroutine(CallGameOver());
 
         }
@@ -404,18 +406,31 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector2.left * 5f, ForceMode2D.Impulse);
         }
-        for (float i = 0; i < damageTime; i += 0.2f)
+        
+        Physics2D.IgnoreLayerCollision(6,3);
+        for (float i = 0; i < damageTime; i += 0.4f)
         {
-            Physics2D.IgnoreLayerCollision(3,6);
+            canDash = false;
+            canShield = false;
             playerSpriteRenderer.enabled = false;
+            playerSpriteRenderer.color = new Color(1f, 0f, 0f, 1f);
+            yield return new WaitForSeconds(0.1f);
+            playerSpriteRenderer.enabled = true;
+            playerSpriteRenderer.color = new Color(1f, 0f, 0f, 1f);
+            yield return new WaitForSeconds(0.1f);
+            playerSpriteRenderer.enabled = false;
+            playerSpriteRenderer.color = new Color(1f, 0f, 0f, 1f);
             yield return new WaitForSeconds(0.1f);
             playerSpriteRenderer.enabled = true;
             yield return new WaitForSeconds(0.1f);
-            Physics2D.IgnoreLayerCollision(3,6, false);
+            playerSpriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+            
         }
-
-        yield return new WaitForSeconds(0.3f);
         
+        Physics2D.IgnoreLayerCollision(6,3, false);
+        yield return new WaitForSeconds(0.2f);
+        canDash = true;
+        canShield = true;
         isInKnockDown = false;
     }
 
@@ -423,8 +438,9 @@ public class PlayerController : MonoBehaviour
     {
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
         //playerRb.isKinematic = true;
+        //playerRb.gravityScale = 0f;
         animator.SetBool("MorteAsh",true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         isDead = true;
     }
     
