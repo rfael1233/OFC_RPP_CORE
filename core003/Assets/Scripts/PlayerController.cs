@@ -400,16 +400,17 @@ public class PlayerController : MonoBehaviour
        
         if (left)
         {
-            playerRb.AddForce(Vector2.right * 5f, ForceMode2D.Impulse);
+            playerRb.AddForce(Vector2.right * 7f, ForceMode2D.Impulse);
         }
         else
         {
-            playerRb.AddForce(Vector2.left * 5f, ForceMode2D.Impulse);
+            playerRb.AddForce(Vector2.left * 7f, ForceMode2D.Impulse);
         }
         
         Physics2D.IgnoreLayerCollision(6,3);
         for (float i = 0; i < damageTime; i += 0.4f)
         {
+            //isInKnockDown = true;
             canDash = false;
             canShield = false;
             playerSpriteRenderer.enabled = false;
@@ -428,7 +429,7 @@ public class PlayerController : MonoBehaviour
         }
         
         Physics2D.IgnoreLayerCollision(6,3, false);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.05f);
         canDash = true;
         canShield = true;
         isInKnockDown = false;
@@ -436,6 +437,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator CallGameOver()
     {
+        PlayerPrefs.SetString("ultimaFase",SceneManager.GetActiveScene().name);
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
         //playerRb.isKinematic = true;
         //playerRb.gravityScale = 0f;
