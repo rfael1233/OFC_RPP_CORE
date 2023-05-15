@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         score = 0;
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
-        
+        Physics2D.IgnoreLayerCollision(3,6, false);
         if(GameManager.Instance.GetCheckpointAtual() != Vector3.zero)
             transform.position = GameManager.Instance.GetCheckpointAtual();
     }
@@ -322,16 +322,7 @@ public class PlayerController : MonoBehaviour
             playerRb.transform.position = GameManager.Instance.GetCheckpointAtual();
 
         }
-       /*
-        if (col.gameObject.CompareTag("espinho"))
-        {
-            if (col.transform.position.x > transform.position.x)
-                Dano(false);
-            else
-                Dano(true);
-        }
-        */
-       
+
         if (col.gameObject.CompareTag("core"))
         {
             score = score + 1;
@@ -390,8 +381,6 @@ public class PlayerController : MonoBehaviour
             vidaOn.enabled = true;
             vidaOff.enabled = false;
             
-            //toca animacao de morte
-            //Time.timeScale = 0f;
 
             StartCoroutine(CallGameOver());
 
