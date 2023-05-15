@@ -9,26 +9,14 @@ public class NextFase : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D col)
    {
-      if (col.gameObject.CompareTag("Player"))
-      {
-         IrProximaFase1();
-      }
+      
       if (col.gameObject.CompareTag("Player"))
       {
          IrProximaFase2();
       }
       
    }
-
-
-   private void IrProximaFase1()
-   {
-     
-      SceneManager.LoadScene(nomeProximaFase);
-      Vector3 posicaoInicial = new Vector3(-120.97f, -43.61f, 0f);
-      GameManager.Instance.AtualizaCheckpoint(posicaoInicial);
-      
-   }
+   
    private void IrProximaFase2()
    {
      

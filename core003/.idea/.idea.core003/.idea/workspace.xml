@@ -6,23 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TelaInicial/animBarraDash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TelaInicial/animBarraDash.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy3F2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy3F2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseOne.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FaseTwo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Introducao.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Introducao.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Introducao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Introducao.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NextFase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NextFase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +137,8 @@
       <workItem from="1683638070966" duration="3105000" />
       <workItem from="1683645661649" duration="233000" />
       <workItem from="1683821848385" duration="877000" />
-      <workItem from="1683896866605" duration="12492000" />
+      <workItem from="1683896866605" duration="12773000" />
+      <workItem from="1684156154452" duration="746000" />
     </task>
     <servers />
   </component>
