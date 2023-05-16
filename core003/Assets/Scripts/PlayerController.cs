@@ -331,6 +331,8 @@ public class PlayerController : MonoBehaviour
         
         if (col.gameObject.CompareTag("Checkpoint"))
         {
+            PlayerPrefs.SetString("ultimaFase",SceneManager.GetActiveScene().name);
+            GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
             GameManager.Instance.AtualizaCheckpoint(col.transform.position);
             Destroy(col.gameObject);
         }

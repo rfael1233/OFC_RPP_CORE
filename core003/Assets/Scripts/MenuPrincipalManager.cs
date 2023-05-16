@@ -21,6 +21,7 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void Jogar()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(nomeDoLevel);
         Vector3 posicaoInicial = new Vector3(-168.88f, -44f, 0f);
         GameManager.Instance.AtualizaCheckpoint(posicaoInicial);
@@ -44,6 +45,7 @@ public class MenuPrincipalManager : MonoBehaviour
         Application.Quit();
     }
 
+    //Pause
     public void Continuar()
     {
         GameManager.Instance.CarregaUltimaFase();
@@ -51,9 +53,12 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void VoltarMenu()
     {
+        string faseAtual = PlayerPrefs.GetString("ultimaFase");
+        SceneManager.LoadSceneAsync(faseAtual);
         SceneManager.LoadScene("Menu");
     }
-
+    
+    //Tela Incial
     public void ContinuarMenu()
     {
         string faseAtual = PlayerPrefs.GetString("ultimaFase");
