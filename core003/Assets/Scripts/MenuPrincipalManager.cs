@@ -9,13 +9,14 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private string nomeDoLevel;
     [SerializeField] private GameObject painelMenuInicial;
     [SerializeField] private GameObject painelOpcoes;
-    public GameObject botaoConti;
+    [SerializeField] private GameObject botaoConti;
 
     private void Start()
     {
         if (PlayerPrefs.HasKey("ultimaFase"))
         {
-           botaoConti.SetActive(true); 
+            Debug.Log("Butão ativo");
+            botaoConti.SetActive(true);
         }
     }
 
