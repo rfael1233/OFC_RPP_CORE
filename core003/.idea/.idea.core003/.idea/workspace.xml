@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b43314b0-a8e8-4b18-9b36-b5fc5547205b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.core003/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuPrincipalManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuPrincipalManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <workItem from="1683896866605" duration="12773000" />
       <workItem from="1684156154452" duration="17129000" />
       <workItem from="1684242506771" duration="6132000" />
-      <workItem from="1684251244760" duration="944000" />
+      <workItem from="1684251244760" duration="1675000" />
     </task>
     <servers />
   </component>
