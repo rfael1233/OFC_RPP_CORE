@@ -7,6 +7,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
+using Random = UnityEngine.Random;
+
 //using Scene = UnityEditor.SearchService.Scene;
 
 public class PlayerController : MonoBehaviour
@@ -26,6 +28,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject shieldObject;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private List<AudioClip> sounds;
+    
+    
     public Text coreTxt;
     private int score;
 
@@ -92,7 +98,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
         
-        
+        if (isDead) return;
         if(!isInKnockDown)
             playerRb.velocity = new Vector2(movePlayer * speed, playerRb.velocity.y); //Movimentando o player, para um lado e para o outro... tanto para a esquerda, quanto para a direita.
 
@@ -108,6 +114,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+    
+        
+    
         isgrounded = (Physics2D.Linecast(transform.position + Vector3.down * yOffset,
                           transform.position + Vector3.down * (yOffset + raySize), groundLayer) ||
                       Physics2D.Linecast(transform.position + Vector3.down * yOffset + Vector3.right * xOffset,
@@ -116,6 +125,8 @@ public class PlayerController : MonoBehaviour
                       Physics2D.Linecast(transform.position + Vector3.down * yOffset - Vector3.right * xOffset,
                           transform.position + Vector3.down * (yOffset + raySize) - Vector3.right * xOffset,
                           groundLayer));
+        
+        if (isDead) return;
         
         coreTxt.text = score.ToString();
         if (Input.GetAxis("Horizontal") != 0)
@@ -140,6 +151,7 @@ public class PlayerController : MonoBehaviour
             
             if (!isDashing)
             {
+                audioSource.PlayOneShot(sounds[1], 0.3f);
                 StartCoroutine("Dash");
                 dashObjTime.SetActive(true);
                 Invoke("HideDashObject", dashingCoolDown);
@@ -149,6 +161,7 @@ public class PlayerController : MonoBehaviour
         //Condiçao do pulo
         if (pulo == true && isgrounded == true)
         {
+            audioSource.PlayOneShot(sounds[0]);
             playerRb.velocity = new Vector2(playerRb.velocity.x, 0);
             playerRb.AddForce(new Vector2(0, jumpForce));
             isgrounded = false;
@@ -180,12 +193,7 @@ public class PlayerController : MonoBehaviour
                 
             }
         }
-        if (isDead)
-        {
-            isDead = false;
-            SceneManager.LoadScene(7);
-            
-        }
+        
 
         
         lastSpeedY = Mathf.Lerp(lastSpeedY, playerRb.velocity.y, Time.deltaTime * jumpAnimMultiplier);
@@ -342,6 +350,8 @@ public class PlayerController : MonoBehaviour
     
     private void Dano(bool left)
     {
+        if (isInKnockDown) return;
+        
         vida -= 1;    //tirando dano do player
 
         StartCoroutine(DoKnockDown(left));
@@ -441,11 +451,17 @@ public class PlayerController : MonoBehaviour
     {
         PlayerPrefs.SetString("ultimaFase",SceneManager.GetActiveScene().name);
         GameManager.Instance.AtualizarFaseAtual(SceneManager.GetActiveScene().name);
-        //playerRb.isKinematic = true;
-        //playerRb.gravityScale = 0f;
+        playerRb.velocity = Vector2.zero;
+        //playerRb.gravityScale = 1f;
         animator.SetBool("MorteAsh",true);
-        yield return new WaitForSeconds(1.5f);
+        animator.Play("EstaMorto");
         isDead = true;
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(7);
     }
-    
+
+    public void PlayFootSound()
+    {
+        audioSource.PlayOneShot(sounds[2], 0.6f + Random.value * 0.4f);
+    }
 }
