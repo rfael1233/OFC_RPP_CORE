@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Introducao.unity
     guid: ed1d922c6a06e834c8ff74b47e3444c1
   - enabled: 1
-    path: Assets/Scenes/FaseTestes.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/FaseTutorial.unity
     guid: d7dea0a73933fab498782619913bf8d3
   - enabled: 1
@@ -24,9 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/FaseTwo.unity
     guid: a895953d0cbe5ca4594f40277b5a5ca3
   - enabled: 1
-    path: Assets/Scenes/FaseThree.unity
-    guid: f1c239faeeca8184fb2f4c4d77166d9d
-  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 6afdd2d6cf6c9924399e9c925f9bac30
+  - enabled: 1
+    path: Assets/Scenes/Creditos 0.unity
+    guid: 2f67246cf68167247b6ee63c064efbbb
+  - enabled: 1
+    path: Assets/Scenes/Creditos 1.unity
+    guid: f46ec123ea1e69c4eb37153b1977f735
+  - enabled: 1
+    path: Assets/Scenes/Creditos 2.unity
+    guid: ebea1c4d5be43fb42a49faa8666cb885
   m_configObjects: {}
