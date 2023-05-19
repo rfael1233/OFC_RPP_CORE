@@ -7,27 +7,25 @@ public class Portal : MonoBehaviour
 {
     public GameObject portalSaida;
     private GameObject playerGO;
-    private bool habilitaTeleporte;
-    
-    
-    
+    public bool habilitaTeleporte;
+    private AudioSource _source;
+
+
     void Start()
     {
         playerGO = GameObject.FindGameObjectWithTag("Player");
+        _source = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        if (habilitaTeleporte == true && Input.GetKeyDown(KeyCode.DownArrow))
+        if (habilitaTeleporte && Input.GetKeyDown(KeyCode.DownArrow))
         {
+            _source.Play();
             playerGO.transform.position = portalSaida.transform.position;
             habilitaTeleporte = false;
         }
-        if(habilitaTeleporte && Input.GetKeyDown(KeyCode.S))
-        {
-            playerGO.transform.position = portalSaida.transform.position;
-            habilitaTeleporte = false;
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -247,7 +247,8 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: f388a14a3bc788647960f0d3b0166333, type: 3}
   - {fileID: 8300000, guid: 38f711334606a3c47aa923c3ca70e90f, type: 3}
-  - {fileID: 8300000, guid: 65b6358673ebe7147991cb86ce3dc36b, type: 3}
+  - {fileID: 8300000, guid: 2b4bdeb66e8430c418b3ea6e8538616f, type: 3}
+  - {fileID: 8300000, guid: c1859f0b4681e4145bbb5b8726ed077a, type: 3}
   coreTxt: {fileID: 0}
   speed: 8
   playerRb: {fileID: 106968236354511870}

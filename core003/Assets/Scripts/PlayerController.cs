@@ -188,6 +188,7 @@ public class PlayerController : MonoBehaviour
         {
             if (canShield)
             {
+                audioSource.PlayOneShot(sounds[3], 0.3f);
                 StartCoroutine("Shield");
                 
                 
@@ -462,6 +463,6 @@ public class PlayerController : MonoBehaviour
 
     public void PlayFootSound()
     {
-        audioSource.PlayOneShot(sounds[2], 0.6f + Random.value * 0.4f);
+        audioSource.PlayOneShot(sounds[2], 0.5f + Random.value * 0.3f);
     }
 }
